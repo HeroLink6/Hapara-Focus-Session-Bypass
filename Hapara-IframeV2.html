@@ -1,0 +1,15 @@
+<script>
+var win=window.open("https://drive.google.com")
+    win.document.write(`
+    <style>
+        *{margin:0;padding:0;border:none;}
+        iframe{width:100vw;height:100vh}
+    </style>
+    <iframe id="frame"></iframe>
+    <script>
+    var frame=document.getElementById("frame");
+    frame.setAttribute("src",prompt("Insert link to embed :","insert link to website"))
+    <\/script>
+`)
+    window.close()    
+</script>
